@@ -1,5 +1,5 @@
 .main-image {
-  position: relative; /* important for absolute buttons */
+  position: relative;
   width: 100%;
   text-align: center;
   margin-bottom: 10px;

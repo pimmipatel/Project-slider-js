@@ -10,16 +10,8 @@ function updateImage(index) {
   currentIndex = (index + imageSources.length) % imageSources.length;
   displayedImage.src = imageSources[currentIndex];
 
-  // Update active border
   thumbnails.forEach((t) => t.classList.remove("active"));
   thumbnails[currentIndex].classList.add("active");
-
-  // Scroll into view (optional)
-  thumbnails[currentIndex].scrollIntoView({
-    behavior: "smooth",
-    block: "nearest",
-    inline: "center",
-  });
 }
 
 // Thumbnail click
