@@ -1,0 +1,58 @@
+.main-image {
+  position: relative; /* important for absolute buttons */
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+.nav-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.main-image {
+  border: 5px solid red;
+}
+#displayedImage {
+  height: 500px;
+  width: 500px;
+}
+
+.thumbnails {
+  border: 5px solid red;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.thumbnails img.active {
+  border: 3px solid blue;
+  transform: scale(1.1);
+  border-radius: 6px;
+}
+
+img {
+  height: 100px;
+}
